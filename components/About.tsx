@@ -37,7 +37,7 @@ function About({pageInfo}: Props) {
             alt="Kim Yuen" 
             className='w-56 h-56 rounded-full object-cover -mb-20 md:mb-0 flex-shrink-0 md:rounded-lg md:w-64 md:h-96 xl:w -[500px] xl:h-[600px] md:ml-5'/>
         <div className='space-y-10 px-4 md:px-10 max-w-xl'>
-            <h4 className="text-4xl font-semibold">Here's a <span className='underline decoration-[#F7AB0A]/50'>little</span> background</h4>
+            <h4 className="text-4xl font-semibold">Here&apos;s a <span className='underline decoration-[#F7AB0A]/50'>little</span> background</h4>
             <p className='text-base'>{pageInfo.backgroundInformation}</p>
         </div>
     </motion.div>

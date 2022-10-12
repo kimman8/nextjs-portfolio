@@ -20,7 +20,6 @@ function WorkExperience({experience}: Props) {
           {experience?.map((individualExperience)=> (
             <ExperienceCard key={individualExperience._id} individualExperience={individualExperience}/> 
           ))}
-          
         </div>
     </motion.div>
   )

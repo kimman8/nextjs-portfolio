@@ -49,7 +49,7 @@ function Header({socials}: Props) {
         }}
         className='flex flex-row text-gray-300 cursor-pointer items-center'>
             <SocialIcon className='cursor-pointer' network='email' fgColor='gray' bgColor='transparent'/>
-            <p className="uppercase hidden md:inline-flex text-gray-400 text-sm">Let's Chat</p>
+            <p className="uppercase hidden md:inline-flex text-gray-400 text-sm">Let&apos;s Chat</p>
         </motion.div>
         </Link>
     </header>
