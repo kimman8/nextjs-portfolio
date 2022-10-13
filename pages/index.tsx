@@ -20,7 +20,7 @@ type Props = {
   experience: Experience[],
   skills: Skill[],
   projects: Project[],
-  socials: Social[],
+  socials: Social[], 
 }
 
 const Home = ({pageInfo, experience, skills, projects, socials}: Props) => {
@@ -76,5 +76,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
           socials
         },
         revalidate:10,
+        fallback: false
       }
 } 
