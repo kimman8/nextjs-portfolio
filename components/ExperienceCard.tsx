@@ -42,7 +42,7 @@ function ExperienceCard({individualExperience}: Props) {
                     ))}
                 </div>
                 <p className='uppercase py-5 text-gray-300'>{new Date(individualExperience.dateStarted).toDateString()} - {individualExperience.isCurrentlyWorkingHere ? 'PRESENT' : new Date(individualExperience.dateEnded).toDateString() }</p>
-                <ul className='list-disc space-y-4 ml-5 text-lg max-h-96 pr-5 overflow-y-scroll scrollbar scrollbar-track-  scrollbar-thin scrollbar-thumb-[#F7AB0A]/80'>
+                <ul className='list-disc space-y-4 ml-5 text-lg max-h-96 pr-5  overflow-y-scroll scrollbar scrollbar-track-  scrollbar-thin scrollbar-thumb-[#F7AB0A]/80'>
                     {individualExperience.points.map((point:any, i:any)=>(
                         <li key={i}>{point}</li>
                     ))}
