@@ -21,8 +21,8 @@ export const config = {
   projectId: 'pfupuv55',
   // projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
   apiVersion: "2021-03-25",
-  useCdn: false,
-  // useCdn: process.env.NODE_ENV === "production",
+  // useCdn: false,
+  useCdn: process.env.NODE_ENV === "production",
 };
 
 // Set up the client for fetching data in the getProps page functions
