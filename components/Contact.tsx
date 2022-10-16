@@ -33,13 +33,12 @@ function Contact() {
                     <p className='text-2xl'>0438 888 813</p>
                     {/* <p className='text-2xl'>{pageInfo?.phoneNumber}</p> */}
                 </div>
-                <div className='flex items-center space-x-5 justify-center'>
+                {/* <div className='flex items-center space-x-5 justify-center'>
                     <EnvelopeIcon className='h-7 w-7 animate-pulse text-[#F7AB0A]'/>
                     <a className="text-2xl" href='mailto:klyuen91@gmail.com'>
                     klyuen91@gmail.com
-                    {/* {pageInfo?.email} */}
                     </a>
-                </div>
+                </div> */}
                 {/* <div className='flex items-center space-x-5 justify-center'>
                     <MapPinIcon className='h-7 w-7 animate-pulse text-[#F7AB0A]'/>
                     <p className='text-2xl'>123 Developer Lane</p>
