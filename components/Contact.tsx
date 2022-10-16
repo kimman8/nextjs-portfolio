@@ -1,8 +1,7 @@
 import React from 'react'
-import {PhoneIcon, MapPinIcon, EnvelopeIcon} from '@heroicons/react/24/solid'
+import {PhoneIcon, EnvelopeIcon} from '@heroicons/react/24/solid'
 import { useForm, SubmitHandler } from "react-hook-form";
 import { PageInfo } from '../typings'
-
 
 type Props = {
     pageInfo: PageInfo;
@@ -35,7 +34,9 @@ function Contact({pageInfo}: Props) {
                 </div>
                 <div className='flex items-center space-x-5 justify-center'>
                     <EnvelopeIcon className='h-7 w-7 animate-pulse text-[#F7AB0A]'/>
-                    <p className='text-2xl'>{pageInfo.email}</p>
+                    <a className="text-2xl" href={`mailto:${pageInfo.email}`}>
+                        {pageInfo.email}
+                    </a>
                 </div>
                 {/* <div className='flex items-center space-x-5 justify-center'>
                     <MapPinIcon className='h-7 w-7 animate-pulse text-[#F7AB0A]'/>
