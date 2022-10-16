@@ -35,9 +35,9 @@ function Contact() {
                 </div>
                 <div className='flex items-center space-x-5 justify-center'>
                     <EnvelopeIcon className='h-7 w-7 animate-pulse text-[#F7AB0A]'/>
-                    <a className="text-2xl" href='mailto:klyuen91@gmail.com'>
+                    <p className="text-2xl">
                     klyuen91@gmail.com
-                    </a>
+                    </p>
                 </div>
                 {/* <div className='flex items-center space-x-5 justify-center'>
                     <MapPinIcon className='h-7 w-7 animate-pulse text-[#F7AB0A]'/>
