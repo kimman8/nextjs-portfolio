@@ -78,3 +78,9 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
         revalidate:10,
       };
 };
+
+export const getStaticPaths = async () => {
+  return {
+      fallback: true,
+  }
+}
