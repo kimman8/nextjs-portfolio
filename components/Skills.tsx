@@ -25,10 +25,10 @@ function Skills({skills}: Props) {
         <h3 className='absolute top-36 tracking-[3px] uppercase text-sm text-gray-500'>Hover over a skill for proficiency</h3>
         <div className='grid grid-cols-4 gap-5'>
           {skills?.slice(0, half).map((skill)=>(
-            <Skill key={skill._id} skill={skill}/>
+            <Skill key={skill?._id} skill={skill}/>
           ))}
           {skills?.slice(half).map((skill)=>(
-            <Skill key={skill._id} skill={skill} directionLeft/>
+            <Skill key={skill?._id} skill={skill} directionLeft/>
           ))}
         </div>
     </motion.div>

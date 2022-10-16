@@ -4,19 +4,20 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { PageInfo } from '../typings'
 
 
-type Props = {
-    pageInfo: PageInfo;
-}
+// type Props = {
+//     pageInfo: PageInfo;
+// }
 type Inputs = {
   name: string,
   email: string,
   subject: string,
   message: string,
 };
-function Contact({pageInfo}: Props) {
+function Contact() {
+// function Contact({pageInfo}: Props) {
   const { register, handleSubmit } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = formData => {
-      window.location.href = `mailto:klyuen91@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
+      window.location.href = `mailto:klyuen91@gmail.com?subject=${formData?.subject}&body=Hi, my name is ${formData?.name}. ${formData?.message} (${formData?.email})`;
   };
   return (
     <div className='h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl md:px-10 px-5 justify-evenly mx-auto items-center'>

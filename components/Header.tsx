@@ -28,7 +28,7 @@ function Header({socials}: Props) {
          className='flex flex-row items-center'>
             {/* Social Icons */}
             {socials.map((social)=>(
-            <SocialIcon key={social._id} url={social.url} fgColor='gray' bgColor='transparent'/>
+            <SocialIcon key={social?._id} url={social?.url} fgColor='gray' bgColor='transparent'/>
             ))}
           
         </motion.div>
