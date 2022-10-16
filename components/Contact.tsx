@@ -1,19 +1,19 @@
 import React from 'react'
 import {PhoneIcon, EnvelopeIcon} from '@heroicons/react/24/solid'
 import { useForm, SubmitHandler } from "react-hook-form";
-import { PageInfo } from '../typings'
+// import { PageInfo } from '../typings'
 
-type Props = {
-    pageInfo: PageInfo;
-}
+// type Props = {
+//     pageInfo: PageInfo;
+// }
 type Inputs = {
   name: string,
   email: string,
   subject: string,
   message: string,
 };
-// function Contact() {
-function Contact({pageInfo}: Props) {
+function Contact() {
+// function Contact({pageInfo}: Props) {
   const { register, handleSubmit } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = formData => {
       window.location.href = `mailto:klyuen91@gmail.com?subject=${formData?.subject}&body=Hi, my name is ${formData?.name}. ${formData?.message} (${formData?.email})`;
@@ -30,12 +30,12 @@ function Contact({pageInfo}: Props) {
             <div className='space-y-10'>
                 <div className='flex items-center space-x-5 justify-center'>
                     <PhoneIcon className='h-7 w-7 animate-pulse text-[#F7AB0A]'/>
-                    <p className='text-2xl'>{pageInfo.phoneNumber}</p>
+                    <p className='text-2xl'>0438 888 813</p>
                 </div>
                 <div className='flex items-center space-x-5 justify-center'>
                     <EnvelopeIcon className='h-7 w-7 animate-pulse text-[#F7AB0A]'/>
-                    <a className="text-2xl" href={`mailto:${pageInfo.email}`}>
-                        {pageInfo.email}
+                    <a className="text-2xl" href='mailto:klyuen91@gmail.com'>
+                        klyuen91@gmail.com
                     </a>
                 </div>
                 {/* <div className='flex items-center space-x-5 justify-center'>
