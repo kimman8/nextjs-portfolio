@@ -8,7 +8,7 @@ const query = groq`
     ...,
     technologies[]->
   }
-`
+`;
 
 type Data = {
     projects: Project[]

@@ -34,12 +34,12 @@ function Contact({pageInfo}: Props) {
                 </div>
                 <div className='flex items-center space-x-5 justify-center'>
                     <EnvelopeIcon className='h-7 w-7 animate-pulse text-[#F7AB0A]'/>
-                    <p className='text-2xl'>klyuen91@gmail.com </p>
+                    <p className='text-2xl'>klyuen91@gmail.com</p>
                 </div>
-                <div className='flex items-center space-x-5 justify-center'>
+                {/* <div className='flex items-center space-x-5 justify-center'>
                     <MapPinIcon className='h-7 w-7 animate-pulse text-[#F7AB0A]'/>
                     <p className='text-2xl'>123 Developer Lane</p>
-                </div>
+                </div> */}
             </div>
             <form className='flex flex-col space-y-2 w- fit mx-auto' onSubmit={handleSubmit(onSubmit)}>
                 <div className='flex space-x-2'>

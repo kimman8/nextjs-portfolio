@@ -8,10 +8,10 @@ const query = groq`
     ...,
     technologies[]->
   }
-`
+`;
 
 type Data = {
-    experience: Experience[]
+    experience: Experience[];
 }
 
 export default async function handler(

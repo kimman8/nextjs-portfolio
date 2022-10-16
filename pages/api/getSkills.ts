@@ -5,11 +5,11 @@ import {Skill} from '../../typings'
 
 const query = groq`
     *[_type=="skill"]
-`
+`;
 
 type Data = {
-    skills: Skill[]
-}
+    skills: Skill[];
+};
 
 export default async function handler(
     req: NextApiRequest,
