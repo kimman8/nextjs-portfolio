@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@heroicons/react": "^2.0.12",
+    "@heroicons/react": "v2",
     "@portabletext/react": "^1.0.6",
     "@sanity/image-url": "^1.0.1",
     "framer-motion": "^7.5.1",
@@ -23,8 +23,8 @@
   },
   "devDependencies": {
     "@types/node": "18.8.0",
-    "@types/react": "18.0.21",
-    "@types/react-dom": "18.0.6",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
     "autoprefixer": "^10.4.12",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1",

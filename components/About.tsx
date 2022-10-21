@@ -7,7 +7,6 @@ type Props = {
   pageInfo: PageInfo;
 };
 
-// function About() {
 function About({ pageInfo }: Props) {
   return (
     <motion.div
@@ -38,7 +37,7 @@ function About({ pageInfo }: Props) {
         transition={{
           duration: 1.2,
         }}
-        src={urlFor(pageInfo?.profilePic).url()}
+        src={urlFor(pageInfo?.profilePic)?.url()}
         alt='Kim Yuen'
         className='w-56 h-56 rounded-full object-cover -mb-20 md:mb-0 flex-shrink-0 md:rounded-lg md:w-64 md:h-96 xl:w -[500px] xl:h-[600px] md:ml-5'
       />

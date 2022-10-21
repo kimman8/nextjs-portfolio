@@ -23,7 +23,6 @@ type Props = {
   socials: Social[];
 };
 
-// const Home = ({ experiences, skills, projects, socials }: Props) => {
 const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
   return (
     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
@@ -33,11 +32,9 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
       <Header socials={socials} />
       <section id='hero' className='snap-start'>
         <Hero pageInfo={pageInfo} />
-        {/* <Hero /> */}
       </section>
       <section id='about' className='snap-center'>
         <About pageInfo={pageInfo} />
-        {/* <About /> */}
       </section>
       <section id='experience' className='snap-center'>
         <WorkExperience experiences={experiences} />
@@ -49,7 +46,6 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
         <Projects projects={projects} />
       </section>
       <section id='contact' className='snap-start'>
-        {/* <Contact /> */}
         <Contact pageInfo={pageInfo} />
       </section>
       <Link href='#hero'>
