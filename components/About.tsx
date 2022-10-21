@@ -1,14 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { urlFor } from '../sanity';
-// import { PageInfo } from "../typings";
+import { PageInfo } from '../typings';
 
-// type Props = {
-//   pageInfo: PageInfo;
-// }
+type Props = {
+  pageInfo: PageInfo;
+};
 
-function About() {
-  // function About({pageInfo}: Props) {
+// function About() {
+function About({ pageInfo }: Props) {
   return (
     <motion.div
       initial={{
@@ -25,28 +25,30 @@ function About() {
       <h3 className='uppercase tracking-[20px] absolute top-24 text-gray-500 text-2xl'>
         About
       </h3>
-      {/* <motion.img initial={{
-            x:-200,
-            opacity: 0,
-            }} 
-            whileInView={{
-                x:0,
-                opacity: 1,
-            }}  
-            viewport={{once:true}}
-            transition={{
-                duration:1.2
-            }}
-            src={urlFor(pageInfo?.profilePic).url()}
-            alt="Kim Yuen" 
-            className='w-56 h-56 rounded-full object-cover -mb-20 md:mb-0 flex-shrink-0 md:rounded-lg md:w-64 md:h-96 xl:w -[500px] xl:h-[600px] md:ml-5'/> */}
+      <motion.img
+        initial={{
+          x: -200,
+          opacity: 0,
+        }}
+        whileInView={{
+          x: 0,
+          opacity: 1,
+        }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 1.2,
+        }}
+        src={urlFor(pageInfo?.profilePic).url()}
+        alt='Kim Yuen'
+        className='w-56 h-56 rounded-full object-cover -mb-20 md:mb-0 flex-shrink-0 md:rounded-lg md:w-64 md:h-96 xl:w -[500px] xl:h-[600px] md:ml-5'
+      />
       <div className='space-y-10 px-4 md:px-10 max-w-xl'>
         <h4 className='text-4xl font-semibold'>
           Here&apos;s a{' '}
           <span className='underline decoration-[#F7AB0A]/50'>little</span>{' '}
           background
         </h4>
-        {/* <p className='text-base'>{pageInfo?.backgroundInformation}</p> */}
+        <p className='text-base'>{pageInfo?.backgroundInformation}</p>
       </div>
     </motion.div>
   );

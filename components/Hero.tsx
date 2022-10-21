@@ -4,17 +4,17 @@ import BackgroundCircles from './BackgroundCircles';
 import Image from 'next/image';
 import Link from 'next/link';
 import { urlFor } from '../sanity';
-// import { PageInfo } from "../typings";
+import { PageInfo } from '../typings';
 
-// type Props = {
-//   pageInfo: PageInfo;
-// }
+type Props = {
+  pageInfo: PageInfo;
+};
 
-// function Hero({ pageInfo }: Props) {
-function Hero() {
+function Hero({ pageInfo }: Props) {
+  // function Hero() {
   const [text, count] = useTypewriter({
     words: [
-      // `Hi!👋 My Name Is ${pageInfo?.name}`,
+      `Hi!👋 My Name Is ${pageInfo?.name}`,
       'I-Love-Rock-Climbing.tsx',
       '<ButLoveToCodeEvenMore />',
     ],
@@ -24,19 +24,19 @@ function Hero() {
   return (
     <div className='h-screen flex flex-col space-y-4 items-center justify-center text-center overflow-hidden'>
       <BackgroundCircles />
-      {/* <Image
+      <Image
         //  src={profilePic}
         src={urlFor(pageInfo?.heroImage).url()}
         alt='Kim Yuen'
         width={190}
         height={190}
         className='rounded-full relative mx-auto object-cover'
-      /> */}
+      />
       {/* <img src="https://i.imgur.com/3KNTWBj.png" alt="Kim Yuen" className='rounded-full relative mx-auto object-cover h-32 w-32'/> */}
       <div className='z-20 relative'>
-        {/* <h2 className='text-gray-500 text-sm uppercase tracking-[15px] pb-2'>
+        <h2 className='text-gray-500 text-sm uppercase tracking-[15px] pb-2'>
           {pageInfo?.role}
-        </h2> */}
+        </h2>
         <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
           <span className='mr-3'>{text}</span>
           <Cursor cursorColor='#F7AB0A' />
