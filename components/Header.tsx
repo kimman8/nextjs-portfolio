@@ -32,8 +32,9 @@ function Header({ socials }: Props) {
           <SocialIcon
             key={social?._id}
             url={social?.url}
-            fgColor='gray'
+            fgColor='#64FFDB'
             bgColor='transparent'
+            className='transition-all hover:text-[#64FFDB]/40'
           />
         ))}
       </motion.div>
@@ -61,8 +62,8 @@ function Header({ socials }: Props) {
             bgColor='transparent'
           /> */}
           {/* we get UI hydration issues when we add the above icon */}
-          <h1 className='uppercase hidden md:inline-flex text-gray-400 text-sm'>
-            Let&apos;s Chat
+          <h1 className='uppercase hidden md:inline-flex text-[#64FFDB] text-sm tracking-widest'>
+            Say Hello
           </h1>
         </motion.div>
       </Link>

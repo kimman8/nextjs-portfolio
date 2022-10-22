@@ -10,7 +10,7 @@ type Props = {
 
 function ExperienceCard({ experience }: Props) {
   return (
-    <article className='flex flex-col rounded-lg bg-[#292929] p-10 items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center opacity-50 hover:opacity-100 transition-opacity duration-200 overflow-hidden'>
+    <article className='flex flex-col rounded-lg bg-[#112240] p-10 items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center opacity-70 hover:opacity-100 transition-opacity duration-200 overflow-hidden'>
       <motion.img
         initial={{
           y: -200,
@@ -29,30 +29,34 @@ function ExperienceCard({ experience }: Props) {
         className='w-32 h-32 rounded-full object-cover xl:w-[200px] object-center'
       />
       <div className='px-0 md:px-10'>
-        <h4 className='text-4xl'>{experience.jobTitle}</h4>
-        <p className='font-bold text-2xl mt-1'>{experience.company}</p>
-        <div className='flex space-x-2 my-2'>
+        <h4 className='tracking-wide text-4xl text-[#64FFDB]'>
+          {experience.jobTitle}
+        </h4>
+        <p className='tracking-widest text-2xl mt-1 text-[#A8B2D1]'>
+          {experience.company}
+        </p>
+        <div className='flex my-2 justify-evenly'>
           {experience.technologies.map((technology) => (
             <Image
               key={technology._id}
               src={urlFor(technology?.image).url()}
-              alt='Kim Yuen'
-              width={190}
-              height={190}
+              alt='Technology Icon'
+              width={50}
+              height={50}
               className='rounded-full relative mx-auto object-cover'
             />
           ))}
         </div>
-        <p className='uppercase py-5 text-gray-300'>
-          {new Date(experience.dateStarted).toDateString()} -{' '}
-          {experience.isCurrentlyWorkingHere
-            ? 'PRESENT'
-            : new Date(experience.dateEnded).toDateString()}
+        <p className='uppercase py-5 text-[#5B6785]'>
+          {experience.dateStarted} -{' '}
+          {experience.isCurrentlyWorkingHere ? 'PRESENT' : experience.dateEnded}
         </p>
-        <ul className='list-disc space-y-4 ml-5 text-lg max-h-96 pr-5  overflow-y-scroll scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
-          {/* <ul className='list-disc space-y-4 ml-5 text-lg max-h-96 pr-5  overflow-y-scroll scrollbar scrollbar-thin scrollbar-track-gray-400/20  scrollbar-thumb-[#F7AB0A]/80'> */}
+        <ul className='list-disc space-y-4 ml-5 text-lg max-h-96 pr-5  overflow-y-scroll scrollbar-track-gray-400/20 scrollbar-thumb-[#64FFDB]/80'>
+          {/* <ul className='list-disc space-y-4 ml-5 text-lg max-h-96 pr-5  overflow-y-scroll scrollbar scrollbar-thin scrollbar-track-gray-400/20  scrollbar-thumb-[#64FFDB]/80'> */}
           {experience.points.map((point: any, i: any) => (
-            <li key={i}>{point}</li>
+            <li key={i} className='text-[#95A0BF]'>
+              ⇨ {point}
+            </li>
           ))}
         </ul>
       </div>

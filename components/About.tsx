@@ -21,7 +21,7 @@ function About({ pageInfo }: Props) {
       }}
       className='h-screen relative flex flex-col items-center justify-evenly md:flex-row text-center md:text-left max-w-7xl mx-auto'
     >
-      <h3 className='uppercase tracking-[20px] absolute top-24 text-gray-500 text-2xl'>
+      <h3 className='uppercase tracking-[20px] absolute top-20 text-[#CCD6F6] text-2xl'>
         About
       </h3>
       <motion.img
@@ -42,12 +42,14 @@ function About({ pageInfo }: Props) {
         className='w-56 h-56 rounded-full object-cover -mb-20 md:mb-0 flex-shrink-0 md:rounded-lg md:w-64 md:h-96 xl:w -[500px] xl:h-[600px] md:ml-5'
       />
       <div className='space-y-10 px-4 md:px-10 max-w-xl'>
-        <h4 className='text-4xl font-semibold'>
+        <h4 className='text-4xl font-semibold text-[#CCD6F6]'>
           Here&apos;s a{' '}
-          <span className='underline decoration-[#F7AB0A]/50'>little</span>{' '}
+          <span className='underline decoration-[#64FFDB]/50'>little</span>{' '}
           background
         </h4>
-        <p className='text-base'>{pageInfo?.backgroundInformation}</p>
+        <p className='text-base text-[#858FAD]'>
+          {pageInfo?.backgroundInformation}
+        </p>
       </div>
     </motion.div>
   );
