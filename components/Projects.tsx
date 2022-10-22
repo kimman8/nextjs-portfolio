@@ -18,7 +18,7 @@ function Projects({ projects }: Props) {
       className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'
     >
       <h3 className='uppercase text-[#CCD6F6] text-2xl tracking-[20px] absolute top-20'>
-        Some Things I've Built
+        Some Things I&apos;ve Built
       </h3>
       {/* <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar-track-gray-400/20 scrollbar-thumb-[#64FFDB]/80'> */}
       <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#64FFDB]/80'>

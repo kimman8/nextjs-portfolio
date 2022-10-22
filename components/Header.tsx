@@ -34,7 +34,7 @@ function Header({ socials }: Props) {
             url={social?.url}
             fgColor='#64FFDB'
             bgColor='transparent'
-            className='transition-all hover:text-[#64FFDB]/40'
+            target='_blank'
           />
         ))}
       </motion.div>
