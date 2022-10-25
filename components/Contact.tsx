@@ -19,7 +19,7 @@ function Contact({ pageInfo }: Props) {
     window.location.href = `mailto:klyuen91@gmail.com?subject=${formData?.subject}&body=Hi, my name is ${formData?.name}. ${formData?.message} (${formData?.email})`;
   };
   return (
-    <div className='h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl md:px-10 px-2 mx-auto items-center justify-center'>
+    <div className='font-Inconsolata h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl md:px-10 px-2 mx-auto items-center justify-center'>
       <h3 className='uppercase text-md md:text-2xl lg:text-3xl tracking-[12px] md:tracking-[20px] text-[#CCD6F6] absolute top-12 md:top-20'>
         Contact
       </h3>

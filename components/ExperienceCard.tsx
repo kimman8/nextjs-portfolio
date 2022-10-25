@@ -29,7 +29,7 @@ function ExperienceCard({ experience }: Props) {
         }}
         src={urlFor(experience?.companyImage).url()}
         alt='Kim Yuen'
-        className='w-12 h-12 md:w-16 md:h-16 lg:h-32 lg:w-32 rounded-full object-cover xl:w-[200px] object-center'
+        className='w-10 h-10 md:w-16 md:h-16 lg:h-32 lg:w-32 rounded-full object-cover xl:w-[200px] object-center'
       />
       <div className='px-0 md:px-2 lg:px-6 xl:px-8'>
         <h4 className='tracking-wide text-sm md:text-lg lg:text-4xl text-[#64FFDB]'>

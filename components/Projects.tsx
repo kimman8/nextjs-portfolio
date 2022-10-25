@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Project } from '../typings';
 import { urlFor } from '../sanity';
-import Link from 'next/link';
 import { FiGithub } from 'react-icons/fi';
 import { MdOutlineLaunch } from 'react-icons/md';
 
@@ -68,7 +67,6 @@ function Projects({ projects }: Props) {
                   href={project?.linkToBuild}
                   aria-label='live preview'
                   target='_blank'
-                  alt='live preview'
                 >
                   <MdOutlineLaunch className='text-[#CCD6F6] h-4 w-4 md:h-6 md:w-6 hover:text-[#5FF5D3] ease-in-out duration-300 transition-all' />
                 </a>
@@ -76,7 +74,6 @@ function Projects({ projects }: Props) {
                   href={project?.linkToSouceCode}
                   aria-label='source code'
                   target='_blank'
-                  alt='source code'
                 >
                   <FiGithub className='text-[#CCD6F6] h-4 w-4 md:h-6 md:w-6 hover:text-[#5FF5D3] ease-in-out duration-300 transition-all' />
                 </a>
