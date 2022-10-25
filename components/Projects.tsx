@@ -72,7 +72,7 @@ function Projects({ projects }: Props) {
                   <MdOutlineLaunch className='text-[#CCD6F6] h-4 w-4 md:h-6 md:w-6 hover:text-[#5FF5D3] ease-in-out duration-300 transition-all' />
                 </a>
                 <a
-                  href={project?.linkToSouceCode}
+                  href={project?.linkToSourceCode}
                   aria-label='source code'
                   target='_blank'
                   rel='noopener noreferrer'
