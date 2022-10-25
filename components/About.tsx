@@ -55,10 +55,10 @@ function About({ pageInfo }: Props) {
           taught me a lot about HTML & CSS!
           <br />
           <br />
-          Fast-forward to today, and I've had the priviledge of working as a
-          mechanical engineer and project manager serving the mining, recycling
-          and manufacturing industries - designing machinery for some of
-          Australia&apos;s largest mining corporations.
+          Fast-forward to today, and I&apos;ve had the priviledge of working as
+          a mechanical engineer and project manager serving the mining,
+          recycling and manufacturing industries - designing machinery for some
+          of Australia&apos;s largest mining corporations.
           <br />
           <br />
           However, deep down I knew my passion was in the web and software - so
