@@ -34,8 +34,8 @@ export default {
       type: 'url',
     },
     {
-      name: 'linkToSouceCode',
-      title: 'LinkToSouceCode',
+      name: 'linkToSourceCode',
+      title: 'LinkToSourceCode',
       type: 'url',
     },
   ],
