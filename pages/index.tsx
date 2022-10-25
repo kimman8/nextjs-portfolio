@@ -14,7 +14,7 @@ import { fetchExperiences } from '../utils/fetchExperiences';
 import { fetchSkills } from '../utils/fetchSkills';
 import { fetchProjects } from '../utils/fetchProjects';
 import { fetchSocials } from '../utils/fetchSocials';
-
+import { AiOutlineHome } from 'react-icons/ai';
 type Props = {
   pageInfo: PageInfo;
   experiences: Experience[];
@@ -54,8 +54,9 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
             <img
               src='https://i.imgur.com/3KNTWBj.png'
               alt='home'
-              className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer'
+              className='h-6 w-6 md:h-10 md:w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer'
             />
+            {/* <AiOutlineHome className='text-[#64FFDB] h-4 w-4 md:h-10 md:w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer' /> */}
           </div>
         </footer>
       </Link>

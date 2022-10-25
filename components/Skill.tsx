@@ -10,10 +10,11 @@ type Props = {
 
 function Skill({ directionLeft, skill }: Props) {
   return (
-    <div className='group relative flex cursor-pointer'>
+    <div className='group relative flex'>
       <motion.img
         initial={{
-          x: directionLeft ? -200 : 200,
+          // x: directionLeft ? -200 : 200,
+          x: 0,
           opacity: 0,
         }}
         transition={{
@@ -24,14 +25,14 @@ function Skill({ directionLeft, skill }: Props) {
           opacity: 1,
         }}
         src={urlFor(skill?.image).url()}
-        className='h-12 w-12 rounded-full border border-gray-500 object-cover md:h-16 md:w-16 xl:w-18 xl:h-18 filter group-hover:grayscale transition duration-300 ease-in-out'
+        className='h-8 w-8 rounded-full border border-gray-500 object-cover md:h-12 md:w-12 lg:w-20 lg:h-20 xl:w-24 xl:h-24 filter group-hover:grayscale transition duration-300 ease-in-out'
       />
-      <div className='absolute opacity-0 group-hover:opacity-80 group-hover:bg-[#CCD6F6] h-12 w-12 md:h-16 md:w-16 xl:w-18 xl:h-18 rounded-full transition duration-300 ease-in-out z-0'>
+      <div className='absolute opacity-0 group-hover:opacity-80 group-hover:bg-[#CCD6F6] h-8 w-8 md:h-12 md:w-12 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full transition duration-300 ease-in-out z-0'>
         <div className='flex h-full flex-col items-center justify-center'>
-          <p className='text-xs opacity-100 text-black font-bold'>
+          <p className='text-xs xl:text-sm opacity-100 text-black font-bold'>
             {skill.title}
           </p>
-          <p className='text-2 xl opacity-100 text-black font-bold'>
+          <p className='text-xs lg:text-lg xl:text-xl opacity-100 text-black font-bold'>
             {skill.progress}%
           </p>
         </div>

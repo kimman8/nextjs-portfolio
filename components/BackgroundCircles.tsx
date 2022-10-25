@@ -18,11 +18,11 @@ function BackgroundCircles() {
       whileInView={{ opacity: 1 }}
       className='relative flex justify-center items-center'
     >
-      <div className='absolute border border-[#757F9B] rounded-full h-[200px] w-[200px] animate-ping mt-48' />
-      <div className='absolute border border-[#757F9B] rounded-full h-[300px] w-[300px] mt-48' />
-      <div className='absolute border border-[#757F9B] rounded-full h-[500px] w-[500px] mt-48' />
-      <div className='absolute border border-[#64FFDB] rounded-full opacity-20 h-[650px] w-[650px] animate-pulse mt-48' />
-      <div className='absolute border border-[#757F9B] rounded-full h-[800px] w-[800px] mt-48' />
+      <div className='absolute border border-[#233554] rounded-full h-[100px] w-[100px] lg:h-[200px] lg:w-[200px] animate-ping mt-48' />
+      <div className='absolute border border-[#233554] rounded-full h-[200px] w-[200px] lg:h-[300px] lg:w-[300px] mt-48' />
+      <div className='absolute border border-[#233554] rounded-full h-[400px] w-[400px] lg:h-[500px] lg:w-[500px] mt-48' />
+      <div className='absolute border border-[#64FFDB] rounded-full opacity-20 h-[550px] w-[550px] lg:h-[650px] lg:w-[650px] animate-pulse mt-48' />
+      <div className='absolute border border-[#233554] rounded-full h-[700px] w-[700px] lg:h-[800px] lg:w-[800px] mt-48' />
     </motion.div>
   );
 }

@@ -3,6 +3,7 @@ import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { Social } from '../typings';
+import { AiFillMessage } from 'react-icons/ai';
 
 type Props = {
   socials: Social[];
@@ -10,7 +11,7 @@ type Props = {
 
 function Header({ socials }: Props) {
   return (
-    <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
+    <header className='sticky top-0 p-3 md:p-5 flex items-start justify-between max-w-7xl mx-auto z-20 items-center'>
       <motion.div
         initial={{
           x: -500,
@@ -25,7 +26,7 @@ function Header({ socials }: Props) {
         transition={{
           duration: 1.5,
         }}
-        className='flex flex-row items-center'
+        className='flex flex-row items-center justify-center'
       >
         {/* Social Icons */}
         {socials.map((social) => (
@@ -61,10 +62,11 @@ function Header({ socials }: Props) {
             fgColor='gray'
             bgColor='transparent'
           /> */}
+          <AiFillMessage className='w-4 h-4 mr-4 md:mr-2 text-[#64FFDB] text-xs md:text-sm lg:text-base' />
           {/* we get UI hydration issues when we add the above icon */}
-          <h1 className='uppercase hidden md:inline-flex text-[#64FFDB] text-sm tracking-widest'>
-            Say Hello
-          </h1>
+          <p className='uppercase hidden md:inline-flex text-[#64FFDB] text-xs md:text-sm lg:text-base tracking-widest'>
+            Say hi
+          </p>
         </motion.div>
       </Link>
     </header>

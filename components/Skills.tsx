@@ -21,18 +21,21 @@ function Skills({ skills }: Props) {
       }}
       className='flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center'
     >
-      <h3 className='absolute top-20 uppercase text-[#CCD6F6] text-2xl tracking-[20px]'>
+      <h3 className='uppercase text-md md:text-2xl lg:text-3xl tracking-[12px] md:tracking-[20px] text-[#CCD6F6] absolute top-12 md:top-20'>
         Skills
       </h3>
-      <h3 className='absolute top-32 tracking-[3px] uppercase text-sm text-[#CCD6F6]'>
+      <h3 className='absolute top-24 md:top-32 tracking-[3px] uppercase text-xs md:text-sm text-[#CCD6F6]'>
         Hover over a skill for proficiency
       </h3>
-      <div className='absolute top-48 grid grid-cols-4 md:grid-cols-5 gap-5'>
-        {skills?.slice(0, half).map((skill) => (
+      <div className='absolute top-40 md:top-48 lg:top-60 grid grid-cols-4 gap-4 md:gap-5 lg:gap-6 xl:gap-8'>
+        {/* {skills?.slice(0, half).map((skill) => (
           <Skill key={skill?._id} skill={skill} />
         ))}
         {skills?.slice(half).map((skill) => (
           <Skill key={skill?._id} skill={skill} directionLeft />
+        ))} */}
+        {skills.map((skill) => (
+          <Skill key={skill?._id} skill={skill} />
         ))}
       </div>
     </motion.div>

@@ -21,14 +21,14 @@ function Hero({ pageInfo }: Props) {
     delaySpeed: 2000,
   });
   return (
-    <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+    <div className='h-screen flex flex-col space-y-14 md:space-y-8 items-center justify-center text-center overflow-hidden'>
       <BackgroundCircles />
       <Image
         src={urlFor(pageInfo?.heroImage).url()}
         alt='Kim Yuen'
         width={190}
         height={190}
-        className='rounded-full relative mx-auto object-cover'
+        className='w-20 h-20 lg:w-32 lg:h-32 rounded-full relative mx-auto object-cover'
       />
       {/* <img
         src='https://i.imgur.com/3KNTWBj.png'
@@ -36,10 +36,10 @@ function Hero({ pageInfo }: Props) {
         className='rounded-full relative mx-auto object-cover h-32 w-32'
       /> */}
       <div className='z-20 relative'>
-        <h2 className='text-[#CCD6F6] text-sm uppercase tracking-[15px] pb-2'>
+        <h2 className='text-[#CCD6F6] text-xs md:text-sm uppercase tracking-[15px] pb-2'>
           {pageInfo?.role}
         </h2>
-        <h1 className='text-5xl lg:text-6xl font-semibold px-10 text-[#CCD6F6]'>
+        <h1 className='text-lg md:text-3xl lg:text-6xl font-semibold text-[#CCD6F6]'>
           <span className='mr-3'>{text}</span>
           <Cursor cursorColor='#64FFDB' />
         </h1>
