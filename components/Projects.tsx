@@ -59,7 +59,7 @@ function Projects({ projects }: Props) {
                   />
                 ))}
               </div>
-              <p className='text-sm md:text-base lg:text-lg xl:text-xl text-[#858FAD] text-left'>
+              <p className='text-xs md:text-base lg:text-lg xl:text-xl text-[#858FAD] text-left'>
                 {project?.summary}
               </p>
               <div className='flex space-x-3 md:space-x-5 justify-center items-center'>
@@ -67,6 +67,7 @@ function Projects({ projects }: Props) {
                   href={project?.linkToBuild}
                   aria-label='live preview'
                   target='_blank'
+                  rel='noopener noreferrer'
                 >
                   <MdOutlineLaunch className='text-[#CCD6F6] h-4 w-4 md:h-6 md:w-6 hover:text-[#5FF5D3] ease-in-out duration-300 transition-all' />
                 </a>
@@ -74,6 +75,7 @@ function Projects({ projects }: Props) {
                   href={project?.linkToSouceCode}
                   aria-label='source code'
                   target='_blank'
+                  rel='noopener noreferrer'
                 >
                   <FiGithub className='text-[#CCD6F6] h-4 w-4 md:h-6 md:w-6 hover:text-[#5FF5D3] ease-in-out duration-300 transition-all' />
                 </a>

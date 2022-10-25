@@ -67,6 +67,7 @@ function About({ pageInfo }: Props) {
           <a
             className='transition-all hover:underline text-[#64FFDB]'
             href='https://www.akqa.com/'
+            rel='noopener noreferrer'
             target='_blank'
           >
             AKQA
