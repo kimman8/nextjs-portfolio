@@ -62,8 +62,8 @@ function Header({ socials }: Props) {
             fgColor='gray'
             bgColor='transparent'
           /> */}
-          <AiFillMessage className='w-4 h-4 mr-4 md:mr-2 text-[#64FFDB] text-xs md:text-sm lg:text-base' />
           {/* we get UI hydration issues when we add the above icon */}
+          <AiFillMessage className='w-4 h-4 mr-4 md:mr-2 text-[#64FFDB] text-xs md:text-sm lg:text-base' />
           <p className='uppercase hidden md:inline-flex text-[#64FFDB] text-xs md:text-sm lg:text-base tracking-widest'>
             Say hi
           </p>
