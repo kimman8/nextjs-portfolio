@@ -57,7 +57,7 @@ function Hero({ pageInfo }: Props) {
             <button className='heroButton text-[#C8D2F1]'>Projects</button>
           </Link>
           <Link
-            href='/files/KY-RESUME-NOV22.pdf'
+            href='/files/KY-CV-NOV22.pdf'
             download
             target='_blank'
             rel='noopener noreferrer'
