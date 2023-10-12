@@ -11,7 +11,7 @@ type Props = {
 
 function Header({ socials }: Props) {
   return (
-    <header className='sticky top-0 p-3 md:p-5 flex items-start justify-between max-w-7xl mx-auto z-20 items-center'>
+    <header className="sticky top-0 p-3 md:p-5 flex items-start justify-between max-w-7xl mx-auto z-20 items-center">
       <motion.div
         initial={{
           x: -500,
@@ -26,20 +26,20 @@ function Header({ socials }: Props) {
         transition={{
           duration: 1.5,
         }}
-        className='flex flex-row items-center justify-center'
+        className="flex flex-row items-center justify-center"
       >
         {/* Social Icons */}
         {socials.map((social) => (
           <SocialIcon
             key={social?._id}
             url={social?.url}
-            fgColor='#64FFDB'
-            bgColor='transparent'
-            target='_blank'
+            fgColor="#64FFDB"
+            bgColor="transparent"
+            target="_blank"
           />
         ))}
       </motion.div>
-      <Link href='#contact'>
+      <Link href="#contact">
         <motion.div
           initial={{
             x: 500,
@@ -54,7 +54,7 @@ function Header({ socials }: Props) {
           transition={{
             duration: 1.5,
           }}
-          className='flex flex-row text-gray-300 cursor-pointer items-center'
+          className="flex flex-row text-gray-300 cursor-pointer items-center"
         >
           {/* <SocialIcon
             className='cursor-pointer'
@@ -63,8 +63,8 @@ function Header({ socials }: Props) {
             bgColor='transparent'
           /> */}
           {/* we get UI hydration issues when we add the above icon */}
-          <AiFillMessage className='w-4 h-4 mr-4 md:mr-2 text-[#64FFDB] text-xs md:text-sm lg:text-base' />
-          <p className='uppercase hidden md:inline-flex text-[#64FFDB] text-xs md:text-sm lg:text-base tracking-widest'>
+          <AiFillMessage className="w-4 h-4 mr-4 md:mr-2 text-[#64FFDB] text-xs md:text-sm lg:text-base" />
+          <p className="uppercase hidden md:inline-flex text-[#64FFDB] text-xs md:text-sm lg:text-base tracking-widest">
             Say hi
           </p>
         </motion.div>
