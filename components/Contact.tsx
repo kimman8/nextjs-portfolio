@@ -44,10 +44,6 @@ function Contact({ pageInfo }: Props) {
               klyuen91@gmail.com
             </p>
           </div>
-          {/* <div className='flex items-center space-x-5 justify-center'>
-                    <MapPinIcon className='h-7 w-7 animate-pulse text-[#64FFDB]'/>
-                    <p className='text-2xl'>123 Developer Lane</p>
-                </div> */}
         </div>
         <form
           className="flex flex-col space-y-2 w-fit mx-auto"
