@@ -47,7 +47,7 @@ function About({ pageInfo }: Props) {
           <span className="underline decoration-[#64FFDB]/50">little</span>{' '}
           background
         </h4>
-        <p className="text-[12px] md:text-xs lg:text-lg xl:text-xl text-[#858FAD]">
+        <p className="text-[12px] md:text-xs lg:text-lg xl:text-lg text-[#858FAD]">
           Hi! My name is Kim and I enjoy creating art, code and weird projects
           for this perfect and always evolving medium: the web! My interest in
           web development started back in 2006 when I decided to try editing
